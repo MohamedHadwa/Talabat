@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Talabat/Pods-Talabat-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/OTPFieldView/OTPFieldView.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

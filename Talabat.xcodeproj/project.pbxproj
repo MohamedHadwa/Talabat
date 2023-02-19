@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D921FEEE29A28E6000C49B21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FEED29A28E6000C49B21 /* AppDelegate.swift */; };
+		D921FEF029A28E6000C49B21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FEEF29A28E6000C49B21 /* SceneDelegate.swift */; };
+		D921FEF229A28E6000C49B21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FEF129A28E6000C49B21 /* LoginViewController.swift */; };
+		D921FEF529A28E6000C49B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D921FEF329A28E6000C49B21 /* Main.storyboard */; };
+		D921FEF729A28E6200C49B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921FEF629A28E6200C49B21 /* Assets.xcassets */; };
+		D921FEFA29A28E6200C49B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D921FEF829A28E6200C49B21 /* LaunchScreen.storyboard */; };
+		D921FF3029A2A14800C49B21 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF2F29A2A14800C49B21 /* Extension.swift */; };
+		D921FF3729A2A1D100C49B21 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF3629A2A1D100C49B21 /* LoginModel.swift */; };
+		D921FF3929A2A1E100C49B21 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF3829A2A1E100C49B21 /* RegisterModel.swift */; };
+		D921FF3F29A2A25B00C49B21 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D921FF3E29A2A25B00C49B21 /* Register.storyboard */; };
+		D921FF4129A2A2A500C49B21 /* OTP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D921FF4029A2A2A500C49B21 /* OTP.storyboard */; };
+		D921FF4329A2A2B500C49B21 /* ForgetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D921FF4229A2A2B500C49B21 /* ForgetPassword.storyboard */; };
+		D921FF4A29A2A38600C49B21 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = D921FF4829A2A38600C49B21 /* loading.json */; };
+		D921FF4B29A2A38600C49B21 /* vegetable.json in Resources */ = {isa = PBXBuildFile; fileRef = D921FF4929A2A38600C49B21 /* vegetable.json */; };
+		D921FF5029A2A39B00C49B21 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF4C29A2A39B00C49B21 /* ToastView.swift */; };
+		D921FF5129A2A39B00C49B21 /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D921FF4D29A2A39B00C49B21 /* ToastView.xib */; };
+		D921FF5229A2A39B00C49B21 /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF4E29A2A39B00C49B21 /* ToastManager.swift */; };
+		D921FF5329A2A39B00C49B21 /* KeyboardStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF4F29A2A39B00C49B21 /* KeyboardStateManager.swift */; };
+		D921FF5529A2A3C400C49B21 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF5429A2A3C400C49B21 /* RegisterViewController.swift */; };
+		D921FF5729A2A3EA00C49B21 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF5629A2A3EA00C49B21 /* OTPViewController.swift */; };
+		D921FF5929A2A41300C49B21 /* ForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921FF5829A2A41300C49B21 /* ForgetPasswordController.swift */; };
+		EFA9C153AE4CA8933FE70579 /* Pods_Talabat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9230E74BFFDA9A6EE586BD7 /* Pods_Talabat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6A08F8022A04D3EA14FCA882 /* Pods-Talabat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talabat.debug.xcconfig"; path = "Target Support Files/Pods-Talabat/Pods-Talabat.debug.xcconfig"; sourceTree = "<group>"; };
+		A9230E74BFFDA9A6EE586BD7 /* Pods_Talabat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talabat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6C87B336DBB7445507971C /* Pods-Talabat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talabat.release.xcconfig"; path = "Target Support Files/Pods-Talabat/Pods-Talabat.release.xcconfig"; sourceTree = "<group>"; };
+		D921FEEA29A28E6000C49B21 /* Talabat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talabat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D921FEED29A28E6000C49B21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D921FEEF29A28E6000C49B21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D921FEF129A28E6000C49B21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D921FEF429A28E6000C49B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D921FEF629A28E6200C49B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D921FEF929A28E6200C49B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D921FEFB29A28E6200C49B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D921FF2F29A2A14800C49B21 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D921FF3129A2A15D00C49B21 /* Tajawal-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tajawal-Regular.ttf"; sourceTree = "<group>"; };
+		D921FF3629A2A1D100C49B21 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		D921FF3829A2A1E100C49B21 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		D921FF3E29A2A25B00C49B21 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		D921FF4029A2A2A500C49B21 /* OTP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OTP.storyboard; sourceTree = "<group>"; };
+		D921FF4229A2A2B500C49B21 /* ForgetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgetPassword.storyboard; sourceTree = "<group>"; };
+		D921FF4829A2A38600C49B21 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		D921FF4929A2A38600C49B21 /* vegetable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vegetable.json; sourceTree = "<group>"; };
+		D921FF4C29A2A39B00C49B21 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		D921FF4D29A2A39B00C49B21 /* ToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
+		D921FF4E29A2A39B00C49B21 /* ToastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
+		D921FF4F29A2A39B00C49B21 /* KeyboardStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardStateManager.swift; sourceTree = "<group>"; };
+		D921FF5429A2A3C400C49B21 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D921FF5629A2A3EA00C49B21 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		D921FF5829A2A41300C49B21 /* ForgetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D921FEE729A28E6000C49B21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA9C153AE4CA8933FE70579 /* Pods_Talabat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25BE143D856EF6191AB8B126 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A08F8022A04D3EA14FCA882 /* Pods-Talabat.debug.xcconfig */,
+				BC6C87B336DBB7445507971C /* Pods-Talabat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D921FEE129A28E6000C49B21 = {
+			isa = PBXGroup;
+			children = (
+				D921FEEC29A28E6000C49B21 /* Talabat */,
+				D921FEEB29A28E6000C49B21 /* Products */,
+				25BE143D856EF6191AB8B126 /* Pods */,
+				EDAFD4E5A284AD081019A2FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D921FEEB29A28E6000C49B21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D921FEEA29A28E6000C49B21 /* Talabat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D921FEEC29A28E6000C49B21 /* Talabat */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF3529A2A1BF00C49B21 /* Model */,
+				D921FF3429A2A1B100C49B21 /* View */,
+				D921FF3329A2A1A600C49B21 /* Controller */,
+				D921FF2E29A2A12200C49B21 /* Extension */,
+				D921FF2D29A2A0FF00C49B21 /* Helpers */,
+				D921FEFB29A28E6200C49B21 /* Info.plist */,
+			);
+			path = Talabat;
+			sourceTree = "<group>";
+		};
+		D921FF2D29A2A0FF00C49B21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF4829A2A38600C49B21 /* loading.json */,
+				D921FF4929A2A38600C49B21 /* vegetable.json */,
+				D921FF3229A2A18D00C49B21 /* Toast */,
+				D921FEED29A28E6000C49B21 /* AppDelegate.swift */,
+				D921FEEF29A28E6000C49B21 /* SceneDelegate.swift */,
+				D921FEF629A28E6200C49B21 /* Assets.xcassets */,
+				D921FEF829A28E6200C49B21 /* LaunchScreen.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D921FF2E29A2A12200C49B21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF2F29A2A14800C49B21 /* Extension.swift */,
+				D921FF3129A2A15D00C49B21 /* Tajawal-Regular.ttf */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D921FF3229A2A18D00C49B21 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF4F29A2A39B00C49B21 /* KeyboardStateManager.swift */,
+				D921FF4E29A2A39B00C49B21 /* ToastManager.swift */,
+				D921FF4C29A2A39B00C49B21 /* ToastView.swift */,
+				D921FF4D29A2A39B00C49B21 /* ToastView.xib */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		D921FF3329A2A1A600C49B21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF4729A2A34C00C49B21 /* Register */,
+				D921FF4629A2A33C00C49B21 /* Login */,
+				D921FF4529A2A33100C49B21 /* OTP */,
+				D921FF4429A2A31700C49B21 /* ForgetPassword */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D921FF3429A2A1B100C49B21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF3D29A2A24500C49B21 /* Register */,
+				D921FF3C29A2A23900C49B21 /* Login */,
+				D921FF3B29A2A22E00C49B21 /* OTP */,
+				D921FF3A29A2A1F700C49B21 /* ForgetPassword */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D921FF3529A2A1BF00C49B21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF3629A2A1D100C49B21 /* LoginModel.swift */,
+				D921FF3829A2A1E100C49B21 /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D921FF3A29A2A1F700C49B21 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF4229A2A2B500C49B21 /* ForgetPassword.storyboard */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		D921FF3B29A2A22E00C49B21 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF4029A2A2A500C49B21 /* OTP.storyboard */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		D921FF3C29A2A23900C49B21 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D921FEF329A28E6000C49B21 /* Main.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D921FF3D29A2A24500C49B21 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF3E29A2A25B00C49B21 /* Register.storyboard */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D921FF4429A2A31700C49B21 /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF5829A2A41300C49B21 /* ForgetPasswordController.swift */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		D921FF4529A2A33100C49B21 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF5629A2A3EA00C49B21 /* OTPViewController.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		D921FF4629A2A33C00C49B21 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D921FEF129A28E6000C49B21 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D921FF4729A2A34C00C49B21 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D921FF5429A2A3C400C49B21 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		EDAFD4E5A284AD081019A2FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9230E74BFFDA9A6EE586BD7 /* Pods_Talabat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D921FEE929A28E6000C49B21 /* Talabat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D921FEFE29A28E6200C49B21 /* Build configuration list for PBXNativeTarget "Talabat" */;
+			buildPhases = (
+				F9FA4AD8EE6D2BC762161E4E /* [CP] Check Pods Manifest.lock */,
+				D921FEE629A28E6000C49B21 /* Sources */,
+				D921FEE729A28E6000C49B21 /* Frameworks */,
+				D921FEE829A28E6000C49B21 /* Resources */,
+				51D3187462934FFB6FB6779F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Talabat;
+			productName = Talabat;
+			productReference = D921FEEA29A28E6000C49B21 /* Talabat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D921FEE229A28E6000C49B21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D921FEE929A28E6000C49B21 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D921FEE529A28E6000C49B21 /* Build configuration list for PBXProject "Talabat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D921FEE129A28E6000C49B21;
+			productRefGroup = D921FEEB29A28E6000C49B21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D921FEE929A28E6000C49B21 /* Talabat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D921FEE829A28E6000C49B21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D921FEFA29A28E6200C49B21 /* LaunchScreen.storyboard in Resources */,
+				D921FEF729A28E6200C49B21 /* Assets.xcassets in Resources */,
+				D921FF4329A2A2B500C49B21 /* ForgetPassword.storyboard in Resources */,
+				D921FEF529A28E6000C49B21 /* Main.storyboard in Resources */,
+				D921FF4A29A2A38600C49B21 /* loading.json in Resources */,
+				D921FF4B29A2A38600C49B21 /* vegetable.json in Resources */,
+				D921FF5129A2A39B00C49B21 /* ToastView.xib in Resources */,
+				D921FF3F29A2A25B00C49B21 /* Register.storyboard in Resources */,
+				D921FF4129A2A2A500C49B21 /* OTP.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51D3187462934FFB6FB6779F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Talabat/Pods-Talabat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Talabat/Pods-Talabat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Talabat/Pods-Talabat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9FA4AD8EE6D2BC762161E4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Talabat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D921FEE629A28E6000C49B21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D921FF3729A2A1D100C49B21 /* LoginModel.swift in Sources */,
+				D921FF5529A2A3C400C49B21 /* RegisterViewController.swift in Sources */,
+				D921FF5029A2A39B00C49B21 /* ToastView.swift in Sources */,
+				D921FF5329A2A39B00C49B21 /* KeyboardStateManager.swift in Sources */,
+				D921FEF229A28E6000C49B21 /* LoginViewController.swift in Sources */,
+				D921FF5229A2A39B00C49B21 /* ToastManager.swift in Sources */,
+				D921FF5729A2A3EA00C49B21 /* OTPViewController.swift in Sources */,
+				D921FF5929A2A41300C49B21 /* ForgetPasswordController.swift in Sources */,
+				D921FF3929A2A1E100C49B21 /* RegisterModel.swift in Sources */,
+				D921FEEE29A28E6000C49B21 /* AppDelegate.swift in Sources */,
+				D921FEF029A28E6000C49B21 /* SceneDelegate.swift in Sources */,
+				D921FF3029A2A14800C49B21 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D921FEF329A28E6000C49B21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D921FEF429A28E6000C49B21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D921FEF829A28E6200C49B21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D921FEF929A28E6200C49B21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D921FEFC29A28E6200C49B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D921FEFD29A28E6200C49B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D921FEFF29A28E6200C49B21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A08F8022A04D3EA14FCA882 /* Pods-Talabat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G87GP9FXMM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Talabat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mohamedhadwa.Talabat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D921FF0029A28E6200C49B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC6C87B336DBB7445507971C /* Pods-Talabat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G87GP9FXMM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Talabat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mohamedhadwa.Talabat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D921FEE529A28E6000C49B21 /* Build configuration list for PBXProject "Talabat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D921FEFC29A28E6200C49B21 /* Debug */,
+				D921FEFD29A28E6200C49B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D921FEFE29A28E6200C49B21 /* Build configuration list for PBXNativeTarget "Talabat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D921FEFF29A28E6200C49B21 /* Debug */,
+				D921FF0029A28E6200C49B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D921FEE229A28E6000C49B21 /* Project object */;
+}

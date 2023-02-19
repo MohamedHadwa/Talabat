@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="idy-dG-srW">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="7Iq-jU-e3C">
+            <objects>
+                <viewController storyboardIdentifier="LoginId" id="idy-dG-srW" customClass="LoginViewController" customModule="Talabat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4a-Ks-BBE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="mfU-tF-jfH">
+                                <rect key="frame" x="122.5" y="24" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Xi8-Ug-Wll"/>
+                                    <constraint firstAttribute="width" constant="130" id="yrc-as-vYl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا بك مرة أخرى" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBK-hT-adh">
+                                <rect key="frame" x="24" y="178" width="327" height="16"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.52549019610000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يمكنك تسجيل الدخول الأن" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HF0-dM-E52">
+                                <rect key="frame" x="12" y="206" width="320" height="16"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                <color key="textColor" red="0.47574692959999998" green="0.459508419" blue="0.45569515230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9QG-Ik-nnN">
+                                <rect key="frame" x="16" y="238" width="343" height="136"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WU7-mx-3ej">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="U5k-eq-cWM">
+                                                <rect key="frame" x="0.0" y="0.0" width="285" height="60"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-G9-aec">
+                                                        <rect key="frame" x="0.0" y="0.0" width="234" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="jGY-bE-aIi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8n-Ac-WRd">
+                                                        <rect key="frame" x="238" y="0.0" width="47" height="60"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="phone"/>
+                                                    </button>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.93202060460000002" green="0.93668013809999995" blue="0.95586484670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dDl-0d-31K">
+                                                <rect key="frame" x="293" y="0.0" width="50" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovd-Jb-a4g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="46"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="flag"/>
+                                                        <connections>
+                                                            <action selector="countryKeyBtnPressed:" destination="idy-dG-srW" eventType="touchUpInside" id="RJm-EL-aVv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+996" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPI-T3-MlH">
+                                                        <rect key="frame" x="0.0" y="46" width="50" height="14"/>
+                                                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                                                        <color key="textColor" red="0.29803921570000003" green="0.52549019610000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Jg9-nF-I3N"/>
+                                                    <constraint firstAttribute="width" constant="50" id="rvI-kO-iXL"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.93202060460000002" green="0.93668013809999995" blue="0.95586484670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="I3p-QT-wFf">
+                                        <rect key="frame" x="0.0" y="76" width="343" height="60"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzG-gL-tMp">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="iAa-ca-xuF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itk-UL-tTb">
+                                                <rect key="frame" x="299" y="0.0" width="44" height="60"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Unlock"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.93202060460000002" green="0.93668013809999995" blue="0.95586484670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="secureBtnPressed:" destination="idy-dG-srW" eventType="touchUpInside" id="vHf-Fh-xJv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.93202060460000002" green="0.93668013809999995" blue="0.95586484670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.93202060460000002" green="0.93668013809999995" blue="0.95586484670000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-A8-TBz">
+                                <rect key="frame" x="16" y="390" width="142" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx8-rw-PHr">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="30"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="نسيت كلمة المرور؟">
+                                            <fontDescription key="titleFontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgetPasswordPressed:" destination="idy-dG-srW" eventType="touchUpInside" id="sGC-5i-QhY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Nv-pq-kK6"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q26-WV-WRw">
+                                <rect key="frame" x="78" y="622" width="219" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="DF8-Zy-Bsr"/>
+                                </constraints>
+                                <color key="tintColor" red="0.29803921570000003" green="0.52549019610000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ليس لديك حساب ؟ تسجيل الأن">
+                                    <fontDescription key="titleFontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerBtnPressed:" destination="idy-dG-srW" eventType="touchUpInside" id="JcO-J4-fjh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqD-SV-Fke">
+                                <rect key="frame" x="16" y="436" width="343" height="60"/>
+                                <color key="backgroundColor" red="0.29803921570000003" green="0.52549019610000003" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SKz-Da-Eyf"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تسجيل الدخول">
+                                    <fontDescription key="titleFontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="18"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="idy-dG-srW" eventType="touchUpInside" id="4ti-gI-BT5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tqG-VN-gin"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cqD-SV-Fke" firstAttribute="leading" secondItem="ieg-A8-TBz" secondAttribute="leading" id="0XL-5e-Uay"/>
+                            <constraint firstItem="9QG-Ik-nnN" firstAttribute="leading" secondItem="tqG-VN-gin" secondAttribute="leading" constant="16" id="5XQ-Yn-G3z"/>
+                            <constraint firstItem="tqG-VN-gin" firstAttribute="trailing" secondItem="HF0-dM-E52" secondAttribute="trailing" constant="43" id="C7O-bf-58z"/>
+                            <constraint firstItem="Q26-WV-WRw" firstAttribute="centerX" secondItem="d4a-Ks-BBE" secondAttribute="centerX" id="DxT-Ul-4Zy"/>
+                            <constraint firstItem="HF0-dM-E52" firstAttribute="leading" secondItem="tqG-VN-gin" secondAttribute="leading" constant="12" id="I6z-K6-0a1"/>
+                            <constraint firstItem="tqG-VN-gin" firstAttribute="trailing" secondItem="9QG-Ik-nnN" secondAttribute="trailing" constant="16" id="LP9-tR-xRl"/>
+                            <constraint firstItem="HF0-dM-E52" firstAttribute="top" secondItem="dBK-hT-adh" secondAttribute="bottom" constant="12" id="NOG-1A-vua"/>
+                            <constraint firstItem="cqD-SV-Fke" firstAttribute="leading" secondItem="tqG-VN-gin" secondAttribute="leading" constant="16" id="NyR-Ct-e8j"/>
+                            <constraint firstItem="ieg-A8-TBz" firstAttribute="leading" secondItem="tqG-VN-gin" secondAttribute="leading" constant="16" id="OUT-aB-t2i"/>
+                            <constraint firstItem="dBK-hT-adh" firstAttribute="leading" secondItem="tqG-VN-gin" secondAttribute="leading" constant="24" id="PUH-pY-mXE"/>
+                            <constraint firstItem="tqG-VN-gin" firstAttribute="bottom" secondItem="Q26-WV-WRw" secondAttribute="bottom" constant="20" id="XgI-DH-Tt6"/>
+                            <constraint firstItem="9QG-Ik-nnN" firstAttribute="top" secondItem="HF0-dM-E52" secondAttribute="bottom" constant="16" id="YTl-nt-WlA"/>
+                            <constraint firstItem="tqG-VN-gin" firstAttribute="trailing" secondItem="cqD-SV-Fke" secondAttribute="trailing" constant="16" id="Zqn-cF-Zmu"/>
+                            <constraint firstItem="mfU-tF-jfH" firstAttribute="centerX" secondItem="d4a-Ks-BBE" secondAttribute="centerX" id="aWS-8I-hdK"/>
+                            <constraint firstItem="tqG-VN-gin" firstAttribute="trailing" secondItem="dBK-hT-adh" secondAttribute="trailing" constant="24" id="luH-ph-Uwy"/>
+                            <constraint firstItem="ieg-A8-TBz" firstAttribute="top" secondItem="9QG-Ik-nnN" secondAttribute="bottom" constant="16" id="oHf-cV-KBY"/>
+                            <constraint firstItem="mfU-tF-jfH" firstAttribute="top" secondItem="tqG-VN-gin" secondAttribute="top" constant="24" id="ps2-VY-muh"/>
+                            <constraint firstItem="dBK-hT-adh" firstAttribute="top" secondItem="mfU-tF-jfH" secondAttribute="bottom" constant="24" id="puD-hq-whh"/>
+                            <constraint firstItem="cqD-SV-Fke" firstAttribute="top" secondItem="ieg-A8-TBz" secondAttribute="bottom" constant="16" id="sQP-2K-znx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryKeyOutlet" destination="ovd-Jb-a4g" id="cam-f3-V2X"/>
+                        <outlet property="passwordTxtFeild" destination="BzG-gL-tMp" id="l5b-TR-7ZT"/>
+                        <outlet property="phoneNumberTxt" destination="FIX-G9-aec" id="EXe-uO-ZAf"/>
+                        <outlet property="registerOutlet" destination="Q26-WV-WRw" id="Gsk-RT-c0L"/>
+                        <outlet property="securePasswordOutlet" destination="itk-UL-tTb" id="h7l-HW-RHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C34-qT-sUu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-890" y="-198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="130" height="126"/>
+        <image name="Unlock" width="20" height="22"/>
+        <image name="flag" width="32" height="20"/>
+        <image name="phone" width="23" height="23.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
